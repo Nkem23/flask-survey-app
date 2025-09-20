@@ -1,10 +1,12 @@
 from flask import Flask, render_template, request, redirect
 from pymongo import MongoClient
+import os
 
 app = Flask(__name__)
 
 # Connecting to the MongoDB
-client = MongoClient("mongodb+srv://nkemokafor92_db_user:7eq0AykJyZIW5hUz@clusterapp.p47sxl6.mongodb.net/?retryWrites=true&w=majority&appName=ClusterApp")
+mongo_uri = os.getenv("MONGO_URI")  # gets MongoDB URI from environment variable
+client = MongoClient(mongo_uri)
 db = client["surveyDB"]
 collection = db["users"]
 
@@ -44,7 +46,7 @@ def submit():
 # run the app
 
 if __name__ == '__main__':
-    app.run(debug=True)
+     app.run(host="0.0.0.0", port=5000)
 
 # expose for Elastic Beanstalk
 application = app
