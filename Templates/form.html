@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="number"],
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"] {
+            margin-left: 10px;
+        }
+
+        input[type="submit"] {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+<! -- Define the title of the webpage -->
+    <h2>Income & Spending Survey</h2>
+
+<! -- Define what will be contained in the webpage -->
+    <form method="POST" action="/submit">
+        Age: <input type="number" name="age" required><br>
+        Gender: 
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female <br>
+        Total Income: <input type="number" name="income" required><br><br>
+
+        <h3>Expenses</h3>
+        Utilities: <input type="number" name="utilities"><br>
+        Entertainment: <input type="number" name="entertainment"><br>
+        School Fees: <input type="number" name="school_fees"><br>
+        Shopping: <input type="number" name="shopping"><br>
+        Healthcare: <input type="number" name="healthcare"><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
