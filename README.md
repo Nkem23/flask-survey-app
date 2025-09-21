@@ -5,7 +5,7 @@ Visualizations of the collected data are also provided. The app is hosted on AWS
 
 ## Features
 - Collects user data through a web form built with **Flask**.
-- Stores survey responses in **MongoDB**.
+- Stores survey responses in **MongoDB Atlas**.
 - Processes data with a Python class `User`.
 - Exports processed data to a **CSV file**.
 - Supports **data analysis and visualization** in Jupyter Notebook.
@@ -56,6 +56,9 @@ Visualizations of the collected data are also provided. The app is hosted on AWS
        Database name: survey_db
        Collection name: users
 
+If using MongoDB Atlas (cloud):
+
+      client = MongoClient("mongodb+srv://<username>:<password>@cluster0.mongodb.net/survey_db?retryWrites=true&w=majority")
 6. Run the Flask app:
 
        python app.py
