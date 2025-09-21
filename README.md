@@ -78,30 +78,30 @@ The User class in models.py performs the following:
 
   ## AWS Hosting
 
-The Flask app is hosted on AWS Elastic Beanstalk or EC2.  [http://127.0.0.1:5000/]
+The Flask app is hosted on AWS EC2.  [http://127.0.0.1:5000/]
 
 Steps:
            
   1. Package your application:
-  2. Deploy to AWS Elastic Beanstalk via AWS CLI or Console.
+  2. Deploy to AWS EC2.
   3. Access your live app using the assigned AWS URL.
 
  
  ## File Structure
-│
+
 ├── app.py                                 # Main Flask app
 
 ├── Flask Healthcare Application .py       # User class for data processing
 
 ├── requirements.txt                       # Python dependencies
 
-├── templates/                             # HTML templates
+├── templates                              # HTML templates
 
-├── static/                                # CSS, JS, images
+├── static/                                 # CSS, JS, images
 
-├── survey_data/                           # Exported CSV files
+├── survey_data.csv                           # Exported CSV files
 
-├── Flask Healthcare Application .pptx/    # Visulaization and insights of data
+├── Flask Healthcare Application .pptx    # Visulaization and insights of data
 
 └── README.md                              # Project Overview
 
