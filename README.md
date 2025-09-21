@@ -9,7 +9,7 @@ Visualizations of the collected data are also provided. The app is hosted on AWS
 - Processes data with a Python class `User`.
 - Exports processed data to a **CSV file**.
 - Supports **data analysis and visualization** in Jupyter Notebook.
-- Hosted on **AWS Elastic Beanstalk** (or EC2) for live access.
+- Hosted on **AWS EC2** for live access.
 
 
 ## Technologies Used
