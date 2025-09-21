@@ -25,8 +25,7 @@ Visualizations of the collected data are also provided. The app is hosted on AWS
 - **pandas** – Data processing and CSV export
 
 - **matplotlib & seaborn** – Data visualization
-
-
+  
 - **Jupyter Notebook** – Data analysis environment
 
 - **AWS** – Hosting the web application
@@ -42,7 +41,7 @@ Visualizations of the collected data are also provided. The app is hosted on AWS
 
 3. Create a virtual environment
 
-        python -m venv venv
+       python -m venv venv
        venv\Scripts\activate      # Windows
 
 4. Install required packages:
@@ -65,9 +64,9 @@ If using MongoDB Atlas (cloud):
 
 ## Data Processing
 
-    The User class in models.py performs the following:
+The User class in models.py performs the following:
 
-     Receives survey data from MongoDB.
+    Receives survey data from MongoDB.
 
     Cleans and validates data.
 
@@ -89,46 +88,48 @@ Steps:
 
  
  ## File Structure
-flask-survey-app/
 │
 ├── app.py                                 # Main Flask app
+
 ├── Flask Healthcare Application .py       # User class for data processing
+
 ├── requirements.txt                       # Python dependencies
+
 ├── templates/                             # HTML templates
+
 ├── static/                                # CSS, JS, images
+
 ├── survey_data/                           # Exported CSV files
+
 ├── Flask Healthcare Application .pptx/    # Visulaization and insights of data
+
 └── README.md                              # Project Overview
 
 ## Submission Checklist
 
-✅ All assignment deliverables are included:
+ a. Flask  web application for survey data collection
 
- Flask  web application for survey data collection
+ b. MongoDB integration for storing user data
 
- MongoDB integration for storing user data
+ c. Python User class for data processing
 
- Python User class for data processing
+ d. CSV export of processed data
 
- CSV export of processed data
+ e. Jupyter Notebook for data analysis
 
- Jupyter Notebook for data analysis
+ f. Visualizations generated and exported as images
 
- Visualizations generated and exported as images
+ g. Application hosted on AWS
 
- Application hosted on AWS
-
- README file with instructions and project overview
-
- GitHub repository ready for submission
+ h README file with instructions and project overview
 
 This checklist ensures that every part of the assignment scope is fully addressed.
 
 
-Notes
+## Notes
 
-Ensure MongoDB is running before submitting data.
+1. Ensure MongoDB is running before submitting data.
 
-CSV export is required to perform analysis in Jupyter Notebook.
+2. CSV export is required to perform analysis in Jupyter Notebook.
 
-Charts should be saved and exported as image files for submission.
+3. Charts should be saved and exported as image files for submission.
