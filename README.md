@@ -88,14 +88,14 @@ Steps:
  ## File Structure
 flask-survey-app/
 │
-├── app.py                # Main Flask app
-├── models.py             # User class for data processing
-├── requirements.txt      # Python dependencies
-├── templates/            # HTML templates
-├── static/               # CSS, JS, images
-├── data/                 # Exported CSV files
-├── notebooks/            # Jupyter Notebook for analysis
-└── README.md             # This file
+├── app.py                                 # Main Flask app
+├── Flask Healthcare Application .py       # User class for data processing
+├── requirements.txt                       # Python dependencies
+├── templates/                             # HTML templates
+├── static/                                # CSS, JS, images
+├── survey_data/                           # Exported CSV files
+├── Flask Healthcare Application .pptx/    # Visulaization and insights of data
+└── README.md                              # Project Overview
 
 ## Submission Checklist
 
